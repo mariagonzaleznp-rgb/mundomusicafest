@@ -1,0 +1,387 @@
+@font-face {
+    font-family: 'Anton';
+    src: url(../fuentes/Anton-Regular.ttf);
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffde59;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+header img {
+    max-height: 100%;
+}
+
+body {
+    background-color: #fff3c2;
+    font-family: 'Anton';
+}
+
+.menu-toggle {
+    background-color: #ff4949;
+    margin-top: 10px;
+    display: flex;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu ul {
+    display: none;
+}
+
+.menu li {
+    background-color: #ff9999;
+    margin: 3px;
+    list-style: none;
+    text-align: center;
+    padding: 5px 30px;
+    text-decoration: none;
+}
+
+.menu li a:link,
+.menu li a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: #ff4949
+}
+
+#fecha {
+    background-color: #ff914d;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#fecha h1 {
+    background-color: #ffcdae;
+    margin: 3px;
+    padding: 3px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#bienvenida {
+    background-color: #ff66c4;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#bienvenida p {
+    background-color: #ffc2e8;
+    margin: 5px;
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+}
+
+#bienvenida a:link,
+#bienvenida a:visited {
+    background-color: #cc007e;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0px 50px;
+    margin-bottom: 5px;
+}
+
+#bienvenida a:hover {
+    color: #ff66c4;
+}
+
+#artistas {
+    background-color: #7ed957;
+    margin-top: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+
+}
+
+#artistas h1 {
+    background-color: #c3f1af;
+    color: #007a3f;
+    margin: 0 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+#generos {
+    display: flex;
+    justify-content: space-between;
+    columns: 4;
+    margin: 5px;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cantante img {
+    margin-left: 5px;
+    padding-top: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.cantante a:link,
+.cantante a:visited {
+    background-color: #c3f1af;
+    color: #007a3f;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-size: 35px;
+}
+
+.cantante a:hover {
+    color: #7ed957;
+}
+
+#entradas {
+    background-color: #38b6ff;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#encabezado h1 {
+    background-color: #85d2ff;
+    color: #004aad;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: 40px;
+}
+
+#encabezado p {
+    background-color: #5170ff;
+    margin: 5px 3px 0 3px;
+    padding: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 7px;
+    font-size: 20px;
+}
+
+#paquete {
+    display: flex;
+    justify-content: space-between;
+    columns: 3;
+    font-size: 25px;
+    padding: 5px 0;
+    flex-direction: column;
+}
+
+.combos {
+    background-color: #85d2ff;
+    margin: 3px;
+    padding: 5px 25px;
+    color: #ffffff;
+    text-align: center;
+
+}
+
+.combos a:link,
+.combos a:visited {
+    color: #004aad;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.combos a:hover {
+    color: #5170ff;
+}
+
+footer {
+    background-color: #cb6ce6;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+#contacto {
+    color: #ffffff;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0px;
+    flex-direction: column;
+}
+
+#contacto li {
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+#apoyan {
+    color: #6b1fad;
+    text-align: center;
+    list-style: none;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+    header {
+        height: 250px;
+        width: auto;
+    }
+
+    .menu ul {
+        font-size: 20px;
+        background-color: #ff4949;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 2px 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .menu li {
+        background-color: #ff9999;
+        margin: 3px;
+        list-style: none;
+        text-align: center;
+        padding: 5px 20px;
+        text-decoration: none;
+    }
+
+    #bienvenida p {
+        font-size: 25px;
+    }
+
+    #generos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #contacto {
+        flex-direction: row;
+        font-size: 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .menu ul {
+        font-size: 30px;
+        background-color: #ff4949;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 15px 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #fecha h1 {
+        font-size: 45px;
+    }
+
+    #bienvenida {
+        columns: 2;
+        gap: 5px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    #bienvenida p {
+        font-size: 40px;
+        padding: 10px;
+        align-items: center;
+
+    }
+
+    #generos {
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    #paquete {
+        flex-direction: row;
+    }
+}
+
+
+
+/*********************************/
+
+.menu {
+    background-color: #ff4949;
+    color: white;
+    padding: 5px 10px;
+    position: relative;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* 🔽 Vista para CELULAR (menor a 768px) */
+@media (max-width: 767px) {
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #ff4949;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .menu ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* 💻 Vista para TABLET y DESKTOP (768px o más) */
+@media (min-width: 768px) {
+    .menu ul {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+}
