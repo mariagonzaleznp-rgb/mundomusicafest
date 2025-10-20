@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Música Fest</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="img/1logo festival.png" alt="" >
+        </header>
+    </div>
+    <div class="container">
+        <nav class="menu">
+            <div class="menu-toggle" id="menu-toggle">
+              ☰
+            </div>
+            <ul id="menu-list">
+              <li><a href="">Inicio</a></li>
+              <li><a href="">Artistas</a></li>
+              <li><a href="">Entradas</a></li>
+              <li><a href="">Programación</a></li>
+              <li><a href="">Preguntas</a></li>
+              <li><a href="">Contáctenos</a></li>
+            </ul>
+          </nav>
+    </div>
+    <div class="container">
+        <section>
+            <article id="fecha">
+                <h1>SÁB 22.11.25 MEDELLÍN, COLOMBIA</h1>
+            </article>
+            <article id="bienvenida">
+                <video src="img/2video bienvenida.mp4" width="100%" height="" controls></video>
+                <p>Más de 20 artistas en tarima, en 4 espacios diferentes para todos los gustos: reguetón, salsa,
+                    vallenato y corridos.<br><a href="">¡Compra YA tus entradas!</a></p>
+
+            </article>
+            <article id="artistas">
+                <h1>Artistas principales</h1>
+                <div id="generos">
+                <div class="cantante">
+                    <img src="img/3regueton.png" alt="" width="250px" height="250px">
+                    <a href="">Reguetón +</a>
+                </div>
+                <div class="cantante">
+                    <img src="img/4salsa.jpg" alt="" width="250px" height="250px">
+                    <a href="">Salsa +</a>
+                </div>
+                <div class="cantante">
+                    <img src="img/5vallenato.jpg" alt="" width="250px" height="250px">
+                    <a href="">Vallenato +</a>
+                </div>
+                <div class="cantante">
+                    <img src="img/6corridos.jpeg" alt="" width="250px" height="250px">
+                    <a href="">Corridos +</a>
+                </div>
+            </div>
+            </article>
+            <article id="entradas">
+                <div id="encabezado">
+                    <h1>Adquiere tus entradas</h1>
+                    <p>Promoción válida por tiempo limitado</p>
+                </div>
+                <div id="paquete">
+                <div class="combos">
+                    <p>2 entradas generales + 1 granizado pequeño + 1 gaseosa 250ml + 4 perritos <br><a href="">$350.000</a></p>
+                    
+                </div>
+                <div class="combos">
+                    <p>2 entradas VIP + 1 granizado mediano + 1 gaseosa 250ml + 6 perritos <br><a href="">$550.000</a></p>
+                    
+                </div>
+                <div class="combos">
+                    <p>2 entradas premium + 1 granizado grande + media de aguardiente + 8 perritos + 1 gorra Nike <br><a href="">$750.000</a></p>
+                    
+                </div>
+            </div>
+            </article>
+        </section>
+    </div>
+    <div class="container">
+        <footer>
+            <ul id="contacto">
+                <li><img src="img/7ig.png" alt="" width="40" height="auto">
+                <img src="img/7tiktok.png" alt="" width="40px" height="auto">
+                @mundomusica.fest</li>
+                <li><img src="img/8gm.png" alt="" width="40px" height="auto">
+                informacion@mundomusica.fest.co</li>
+            </ul>
+            <ul id="apoyan">
+                <li>Apoyan</li>
+                <img src="img/9hi.png" alt="" width="40px" height="auto">
+                <img src="img/9aa.png" alt="" width="40px" height="auto">
+                <img src="img/9nk.png" alt="" width="40px" height="auto">
+                <img src="img/9cc.png" alt="" width="40px" height="auto">
+                <img src="img/9pm.png" alt="" width="40px" height="auto">
+            </ul>
+        </footer>
+    </div>
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu-list');
+      
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('show');
+        });
+      </script>
+</body>
+</html>
